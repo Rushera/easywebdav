@@ -2,7 +2,7 @@ import platform
 
 python_version, _, __ = platform.python_version_tuple()
 if python_version == '2':
-    from StringIO import StringIO
+    from io import StringIO
 else:
     from io import StringIO
 
